@@ -1,9 +1,20 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kat's Links</title>
     <style>
       body {
         padding-top: 40px;
         padding-bottom: 40px;
+        display: flex;
+        justify-content: center;
+      }
+      .banner {
+        display: flex;
+        justify-content: center;
       }
       .banner-image {
         width: 128px;
@@ -18,28 +29,65 @@
         border-radius: 48px;
         object-fit: cover;
       }
+      .name {
+        color: aquamarine;
+        display: flex;
+        justify-content: center;
+      }
+      .link {
+        background-color: lightgray;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        border-radius: 50px;
+      }
+      .link:hover {
+        background-color: rgb(177, 175, 175);
+      }
+      .link a {
+        color: fuchsia;
+        text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
+      }
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 640px;
+        flex-grow: 1;
+      }
     </style>
   </head>
 
   <body>
-    <div class="banner">
-      <img src="profpic.png" alt="Katherine Jarboe profile picture" class="banner-image"/>
-    </div>
+    <div class="items">
+      <div class="banner">
+        <img src="profpic.png" alt="Katherine Jarboe profile picture" class="banner-image"/>
+      </div>
 
-    <div class="name">
-      Katherine Jarboe
-    </div>
+      <div class="name">
+        Katherine Jarboe
+      </div>
 
-    <div class="social-icons">
-      <img src="/thumbnails/githubLogo.png" alt="github logo teal" class="thumbnail"/>
-      <a href="https://github.com/melo616" target="_blank">
-        Github
-      </a>
-      <img src="/thumbnails/linkedInLogo.png" alt="linkedin logo teal" class="thumbnail"/> 
-      <a href="https://www.linkedin.com/in/katjarboe/" target="_blank">
-        LinkedIn
-      </a>
+      <div class="link">
+        <img src="/thumbnails/githubLogo.png" alt="github logo teal" class="thumbnail"/>
+        <a href="https://github.com/melo616" target="_blank">
+          Github
+        </a>
+      </div>
+      <div class="link">
+        <img src="/thumbnails/linkedInLogo.png" alt="linkedin logo teal" class="thumbnail"/> 
+        <a href="https://www.linkedin.com/in/katjarboe/" target="_blank">
+          LinkedIn
+        </a>
+      </div>
+      <div class="link">
+        <img src="/thumbnails/archaeology.png" alt="archaeology pic with copper age dagger" class="thumbnail"/> 
+        <a href="https://www.academia.edu/9918313/Understanding_Ancient_Farming_Societies_Daub_Analysis_in_Late_Neolithic_Hungary" target="_blank">
+          Undergraduate Thesis: Understanding Ancient Farming Societies
+        </a>
+      </div>
     </div>
-    
   </body>
 </html>
