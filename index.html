@@ -11,6 +11,9 @@
         padding-bottom: 40px;
         display: flex;
         justify-content: center;
+        height: 100vh;
+        background-image: linear-gradient(to left top, pink, lavender);
+        background-size: cover;
       }
       .banner {
         display: flex;
@@ -21,7 +24,7 @@
         height: 128px;
         object-fit: cover;
         border-radius: 128px;
-        border: solid aquamarine 5px;
+        border: solid gray 5px;
       }
       .thumbnail {
         width: 48px;
@@ -30,9 +33,21 @@
         object-fit: cover;
       }
       .name {
-        color: aquamarine;
+        color: gray;
         display: flex;
         justify-content: center;
+        font-size: 2em;
+      }
+      .social-icons {
+        display: flex;
+        justify-content: space-around;
+      }
+      .social-icons a {
+        color: gray;
+        text-decoration: none;
+      }
+      .social-icons a:hover {
+        font-weight: bold;
       }
       .link {
         background-color: lightgray;
@@ -70,14 +85,10 @@
         Katherine Jarboe
       </div>
 
-      <div class="link">
-        <img src="/thumbnails/githubLogo.png" alt="github logo teal" class="thumbnail"/>
+      <div class="social-icons">
         <a href="https://github.com/melo616" target="_blank">
           Github
         </a>
-      </div>
-      <div class="link">
-        <img src="/thumbnails/linkedInLogo.png" alt="linkedin logo teal" class="thumbnail"/> 
         <a href="https://www.linkedin.com/in/katjarboe/" target="_blank">
           LinkedIn
         </a>
@@ -86,6 +97,18 @@
         <img src="/thumbnails/archaeology.png" alt="archaeology pic with copper age dagger" class="thumbnail"/> 
         <a href="https://www.academia.edu/9918313/Understanding_Ancient_Farming_Societies_Daub_Analysis_in_Late_Neolithic_Hungary" target="_blank">
           Undergraduate Thesis: Understanding Ancient Farming Societies
+        </a>
+      </div>
+      <div class="link">
+        <img src="/thumbnails/mbmhmc.png" class="thumbnail"/> 
+        <a href="https://www.formyblock.org/donate" target="_blank">
+          Make a Donation: My Block, My Hood, My City
+        </a>
+      </div>
+      <div class="link">
+        <img src="/thumbnails/cubantody.png" class="thumbnail"/> 
+        <a href="https://cubaexplorer.com/rare-and-beautiful-birds-of-cuba/" target="_blank">
+          Explore: Birds of Cuba
         </a>
       </div>
     </div>
